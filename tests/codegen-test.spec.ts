@@ -13,3 +13,4 @@ test('login page', async ({ page }) => {
   await page.locator('[data-test="add-to-cart"]').click();
   await expect(page.locator('[data-test="cart-quantity"]')).toContainText('1');
 });
+
